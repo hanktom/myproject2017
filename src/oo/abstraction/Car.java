@@ -2,7 +2,7 @@ package oo.abstraction;
 
 public class Car {
 	int id;
-	String brand;
+	public String brand;
 	String name;
 	int cc;
 	String type;

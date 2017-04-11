@@ -5,12 +5,16 @@ public class Student {
 	int math;
 	int chinese;
 	static int pass = 60;
+	public Student(){
+		
+	}
 	public Student(int english, int math, int chinese) {
 		super();
 		this.english = english;
 		this.math = math;
 		this.chinese = chinese;
 	}
+	
 	public void print(){
 		System.out.println(getScore(english)+"\t"
 			+getScore(math)+"\t"+getScore(chinese));
