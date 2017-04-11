@@ -4,7 +4,7 @@ public class Student {
 	int english;
 	int math;
 	int chinese;
-	int pass = 60;
+	static int pass = 60;
 	public Student(int english, int math, int chinese) {
 		super();
 		this.english = english;
