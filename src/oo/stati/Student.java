@@ -1,13 +1,16 @@
 package oo.stati;
 
+import java.util.ArrayList;
+
 public class Student {
 	int english;
 	int math;
 	int chinese;
 	static int pass = 60;
+	
 	public Student(){
-		
 	}
+	
 	public Student(int english, int math, int chinese) {
 		super();
 		this.english = english;
@@ -20,7 +23,7 @@ public class Student {
 			+getScore(math)+"\t"+getScore(chinese));
 	}
 	
-	private String getScore(int score){
+	protected String getScore(int score){
 		if (score < pass){
 			return String.valueOf(score)+"*";
 		}else{
