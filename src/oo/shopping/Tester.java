@@ -15,6 +15,10 @@ public class Tester {
 		list.add(new Customer(6000));
 		for (int i=0; i<list.size(); i++){
 			Customer cust = list.get(i);
+			if (cust instanceof SilverCustomer &&
+					!(cust instanceof GoldenCustomer)){
+				System.out.print("*");
+			}
 			cust.print();
 		}
 	}
